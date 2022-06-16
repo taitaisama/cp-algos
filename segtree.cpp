@@ -60,8 +60,8 @@ struct segtree {
       return get(2*v, tl, tm, l, r);
     }
     else {
-      int n1 = get(2*v, tl, tm, l, tm);
-      int n2 = get(2*v+1, tm+1, tr, tm+1, r);
+      T n1 = get(2*v, tl, tm, l, tm);
+      T n2 = get(2*v+1, tm+1, tr, tm+1, r);
       return f(n1, n2);
     }
   }
